@@ -28,6 +28,9 @@ public class Stack<T> implements StackInterface<T> {
 
 	@Override
 	public T peek() {
+		if(isEmpty()) {
+			return null;
+		}
 		return this.HEAD.value;
 	}
 
